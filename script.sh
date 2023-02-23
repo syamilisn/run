@@ -16,7 +16,9 @@ if [ `ls ${filename}` ];then
 MODULE_AUTHOR(\"Syamili S N\");
 MODULE_DESCRIPTION(\"${2}\");
 MODULE_LICENSE(\"Dual MIT/GPL\");
-MODULE_VERSION(\"0.1\");" >> ${filename}
+MODULE_VERSION(\"0.1\");
+
+" >> ${filename}
 	cat run/template.c >> ${filename}
 else
 	echo "${1} creation failed."
