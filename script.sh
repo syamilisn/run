@@ -11,6 +11,7 @@ filename=`ls ${1}*`
 if [ `ls ${filename}` ];then
 	echo "${1} creation success."
 	echo "
+#include \"run/headers.h\"
 MODULE_AUTHOR(\"Syamili S N\");
 MODULE_DESCRIPTION(\"${2}\");
 MODULE_LICENSE(\"Dual MIT/GPL\");
